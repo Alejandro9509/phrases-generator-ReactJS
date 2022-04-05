@@ -1,0 +1,139 @@
+$main-color: #082032 ; 
+
+body {
+    background-color: $main-color; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bg-color-0 {
+    @extend body; 
+    background-color: $main-color
+}
+.bg-color-1 {
+    @extend body; 
+    background-color: #525558 !important; 
+}
+
+.bg-color-2 {
+    @extend body; 
+    background-color: #ffbf75 !important; 
+}
+.bg-color-3 {
+    @extend body; 
+    background-color: #ff7c75 !important; 
+}
+.bg-color-4 {
+    @extend body; 
+    background-color: #ff7360 !important; 
+}
+.bg-color-5 {
+    @extend body; 
+    background-color: #7052ff !important; 
+}
+@mixin box-shadow($shadow...){
+    box-shadow: $shadow
+}
+@mixin border-radius($variable) {
+    border-radius: $variable;
+}
+@mixin element-centered($x, $y){
+    margin: $x $y;
+}
+
+@mixin transition($x...){
+    -webkit-transition: $x;
+    -moz-transition: $x;
+    -ms-transition: $x;
+    -o-transition: $x;
+    transition: $x;
+}
+
+.quote-box {
+    width: 500px;
+    overflow: hidden;
+    clear: both; 
+    min-height:100px;
+    background-color:white; 
+    padding: 10px; 
+    animation: movement 2s; 
+    @keyframes movement {
+        from {margin-top: 0px;}
+        to {margin-top: 150px}
+    }
+     
+    #tweet-quote {
+        float: left; 
+        color:white; 
+        background-color:$main-color; 
+        padding: 10px;
+        @include border-radius(5px); 
+        text-decoration: solid;
+    }
+    button{
+        padding:10px; 
+        border: 0; 
+        background-color: $main-color; 
+        color: white; 
+        @include border-radius(5px); 
+        float: right; 
+        cursor: pointer;
+    }
+    @include border-radius(10px); 
+    @include element-centered( 150px,  auto );
+    @include box-shadow(0px 0px 26px -7px rgba(0,0,0,0.73))
+}
+
+#author , #text {
+    padding: 10px;  
+    color: $main-color; 
+    
+}
+.color-0 {
+    @extend #author; 
+    @extend #text; 
+    color: $main-color
+}
+.color-1 {
+    @extend #author; 
+    @extend #text; 
+    color: #525558 !important; 
+}
+.color-2 {
+    @extend #author; 
+    @extend #text; 
+    color: #ffbf75 !important; 
+}
+.color-3 {
+    @extend #author; 
+    @extend #text; 
+    color: #ff7c75 !important; 
+}
+.color-4 {
+    @extend #author; 
+    @extend #text; 
+    color: #ff7360 !important; 
+}
+.color-5 {
+    @extend #author; 
+    @extend #text; 
+    color: #7052ff !important; 
+}
+#text {
+    
+    p {
+        text-align: center;
+        font-size: 25px;
+    }    
+}
+#author p {
+    text-align:right;
+}
+
+.fade {
+    animation: fade-in-keyframes 1s;
+  }
+  @keyframes fade-in-keyframes {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+

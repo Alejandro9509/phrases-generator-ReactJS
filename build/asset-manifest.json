@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/phrases-generator.git/static/css/main.eb1001a9.css",
+    "main.js": "/phrases-generator.git/static/js/main.98724c0e.js",
+    "static/js/787.83ab3577.chunk.js": "/phrases-generator.git/static/js/787.83ab3577.chunk.js",
+    "index.html": "/phrases-generator.git/index.html",
+    "main.eb1001a9.css.map": "/phrases-generator.git/static/css/main.eb1001a9.css.map",
+    "main.98724c0e.js.map": "/phrases-generator.git/static/js/main.98724c0e.js.map",
+    "787.83ab3577.chunk.js.map": "/phrases-generator.git/static/js/787.83ab3577.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb1001a9.css",
+    "static/js/main.98724c0e.js"
+  ]
+}
